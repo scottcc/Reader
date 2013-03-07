@@ -200,7 +200,7 @@
 
 		_thumbsY = (thumbCount / _thumbsX);
 
-		if ((_thumbsX * _thumbsY) < thumbCount) _thumbsY++;
+		if ((NSUInteger)(_thumbsX * _thumbsY) < thumbCount) _thumbsY++;
 
 		CGFloat tw = (_thumbsX * _thumbSize.width);
 		CGFloat th = (_thumbsY * _thumbSize.height);
@@ -317,7 +317,7 @@
 
 		NSInteger minY = 0; maxY--; if (maxY < minY) maxY = minY; // Limits
 
-		if (index < 0) index = 0; else if (index > thumbCount) index = (thumbCount - 1);
+		if (index < 0) index = 0; else if (index > (NSInteger)thumbCount) index = (thumbCount - 1);
 
 		NSInteger thumbY = ((index / _thumbsX) * _thumbSize.height); // Thumb Y
 

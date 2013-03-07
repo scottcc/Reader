@@ -113,7 +113,7 @@
 
 			ReaderContentView *contentView = [contentViews objectForKey:key];
 
-			contentView.frame = viewRect; if (page == number) contentOffset = viewRect.origin;
+			contentView.frame = viewRect; if (page == (NSInteger)number) contentOffset = viewRect.origin;
 
 			viewRect.origin.x += viewRect.size.width; // Next view frame position
 		}
