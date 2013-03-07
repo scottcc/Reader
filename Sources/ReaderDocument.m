@@ -47,6 +47,8 @@
 
 	NSString *_password;
 
+    NSString *_title;
+    
 	NSURL *_fileURL;
 }
 
@@ -60,6 +62,7 @@
 @synthesize bookmarks = _bookmarks;
 @synthesize lastOpen = _lastOpen;
 @synthesize password = _password;
+@synthesize title = _title;
 @dynamic fileName, fileURL;
 
 #pragma mark ReaderDocument class methods
