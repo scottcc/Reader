@@ -1,6 +1,27 @@
 
 ## History
 
+2013-11-19: Version 2.7.3
+
+	- Retina and zoom levels bug fixes.
+	- PDF annotation URI handling bug fix.
+
+2013-10-24: Version 2.7.2
+
+	- iOS 7 status bar handling bug fixes.
+
+2013-10-12: Version 2.7.1
+
+	- Changed 'unsafe_unretained' to 'weak'.
+
+2013-10-03: Version 2.7.0
+
+	- iOS 7 and Xcode 5.0 support.
+
+2013-06-04: Version 2.6.2
+
+	- Touch two UIButton, exclusiveTouch = NO. Not good. Fixed.
+
 2012-10-05: Version 2.6.1
 
 	- Greatly improved thumb operation cancel handling.
