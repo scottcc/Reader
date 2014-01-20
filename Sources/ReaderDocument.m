@@ -281,7 +281,10 @@
 
 - (void)saveReaderDocument
 {
-	[self archiveWithFileName:[self fileName]];
+    // SCC: IGNORE SAVING. We DON'T NEED A CACHE which easily goes stale
+    //      and has poor assumptions that the file data doesn't change
+    //      based on the same file name!
+//	[self archiveWithFileName:[self fileName]];
 }
 
 - (void)updateProperties
