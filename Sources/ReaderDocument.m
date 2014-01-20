@@ -160,7 +160,11 @@
 {
 	ReaderDocument *document = nil; // ReaderDocument object
 
-	document = [ReaderDocument unarchiveFromFileName:filePath password:phrase];
+    // SCC: don't use stored plists!
+    //      This can be dangerous if the file at filePath changes, yet the plist
+    //      seems to have stored an older version and returns that blindly.
+    
+	// document = [ReaderDocument unarchiveFromFileName:filePath password:phrase];
 
 	if (document == nil) // Unarchive failed so we create a new ReaderDocument object
 	{
