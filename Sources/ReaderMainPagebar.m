@@ -186,7 +186,9 @@
 		pageNumberLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		pageNumberLabel.shadowColor = [UIColor blackColor];
 		pageNumberLabel.adjustsFontSizeToFitWidth = YES;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
 		pageNumberLabel.minimumScaleFactor = 0.75f;
+#endif
 
 		[pageNumberView addSubview:pageNumberLabel]; // Add label view
 
