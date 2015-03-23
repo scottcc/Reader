@@ -124,7 +124,9 @@
 			titleLabel.backgroundColor = [UIColor clearColor];
 			titleLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 			titleLabel.adjustsFontSizeToFitWidth = YES;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
 			titleLabel.minimumScaleFactor = 0.75f;
+#endif
 			titleLabel.text = title;
 
 			[self addSubview:titleLabel]; 
